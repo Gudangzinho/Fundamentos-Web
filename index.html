@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    
+    <!-- Abrir tag de stilo dentro do head-->
+    <style>   
+        /* Seletor por tag, pnde todo mundo terá uma estilização espeficica.*/
+        p {
+            font-family: sans-serif;
+            text-align: left;
+        }
+        body {
+            background-color: white;
+        }
+
+        /* Seletor por id, onde um unico componente receberá uma estilização espefífica.*/
+        #p2 {
+            color:rgb(131, 29, 28);
+        }
+        #p1 {
+            color: rgb(21, 75, 21);
+        }
+
+        /* Seletor por classe, vai indicar que todo mundo que implementar uma certa classe terá uma estilização especifica.
+        por tudo dentro de uma div e nesta div definir a "class" por (
+                .nome_classe
+        ) 
+
+        (utilizar aquele metodo do curso da rocket)         */
+
+        .texto_div {
+            color: red;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+
+
+    </style>
+
 </head>
 <body>
     <!-- Para utilizarmos listas, usaremos "ol" ou "ul" -->
@@ -21,20 +58,20 @@
 
     <!-- Titulos e subtitulos utilizaremos os h1s (h1, h2, h3 ... h6) -->
     
-    <h1>Olá, mundo!</h1>
-    <h4>Hello, world!</h4>
+    <h1 style="color: rgb(131, 29, 28);">Olá, mundo!</h1>     
+    <h4 style="color: rgb(21, 75, 21);">Hello, world!</h4>
 
     <!-- Parágrafos -->
     
-    <p>
+    <p id="p1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quae eum. Quod tempora quis ab. Iusto provident iste, ratione blanditiis eveniet laboriosam nulla reiciendis at? Enim accusamus voluptates itaque voluptas?
         <!-- Gerar textos automaticos = Lorem -->
     </p>
-    <p>
+    <p id="p2">   <!-- id para poder utilizar o seletor-->
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eius veritatis quia quam accusamus magni porro doloremque voluptate? Quas soluta ducimus debitis cupiditate praesentium quo provident, perferendis itaque autem nesciunt.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta a minima perferendis ullam nam veniam consequatur odio illum, dolores totam quo cum quod atque id, eos velit corrupti optio.
     </p>
-    <p>
+    <p id="p1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis exercitationem iure, impedit, quos magni sequi voluptatibus expedita repellat autem esse, assumenda eveniet facere ipsum voluptates iste omnis ratione soluta. Alias!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odio illo repellat quod autem est nostrum commodi dicta harum aspernatur recusandae sunt adipisci voluptatibus, corrupti consectetur, atque doloribus a enim.
     </p>
@@ -51,6 +88,9 @@
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/9bHDrmH8WEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <div class="texto_div">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro repudiandae, ad officiis odit obcaecati adipisci ipsam illum possimus ducimus animi pariatur eveniet. Voluptatibus mollitia quas labore nobis iure sapiente? </p>
+    </div>
 
 </body>
 </html>
