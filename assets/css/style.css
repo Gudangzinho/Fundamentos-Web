@@ -1,0 +1,80 @@
+#center {
+    text-align: center;
+}
+
+#aling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#right {
+    text-align: right;
+}
+
+.header-img {
+    align-items: center;
+    height: 150px;
+    width: auto;
+}
+
+#titulo {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(131, 29, 28);
+    margin: 30px; 
+}
+
+#subtitulo {
+    text-align: center;
+    text-decoration: underline;
+    font-size: medium; 
+}
+
+.ajustar-texto {
+    text-align: center;
+    text-shadow: 1px;
+    margin: 50px;
+}
+
+.tam-img {
+    width: auto;
+    height: 300px;
+}
+
+.fundo-texto p {
+    background-color: white;
+}
+
+.menu li {
+    display: inline;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: rgb(207, 203, 203);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    flex-flow: row wrap;
+}
+
+.p-mw {
+    max-width: 600px;
+}
+
+.img-icon img {
+    height: 50px;
+    width: 50px;
+}
